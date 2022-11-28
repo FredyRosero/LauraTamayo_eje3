@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- codigo de la cuarta pagina que presenta una breve historia de Iquira-->
+<html>
+
+    <head>
+        <meta charset="UTF-8"/> <!-- permite escribir con caracteres del español -->
+        <meta lang="es"/> <!-- se especifica la lengua en la que estará escrita la información -->
+        <link rel="stylesheet" href="css/style.css"> <!-- incluir la hoja de estilos en la pagina -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- el navegador se adapte al tamaño de la pantalla que consulta -->
+        <title>Breve Historia-Íquira|Huila</title> <!-- titulo de la barra -->
+        <link rel="icon" type="image/png" href="imagenes/favicon.png"/><!--icono en la pestaña del explorador-->
+    </head>
+    
+    <body>
+        <header id="main-header"><!--menu general-->
+    
+         <nav><!-- menu de navegacion con la direccion al que envia al seleccionarlo -->
+                <input type="checkbox" id="btn-menu" checked>
+                    <label for="btn-menu" id="btn-menu-icon"></label><!--<img src="imagenes/menu.png" width="30px"></label> <!-- definir una cajita que se va a modificar para, según su estado, desplegar el menu, ademas el atributo for del label permite relacionar el click del checkbox con el elemento label -->
+            <ul>
+                <li>
+                    <a id="logo-header" href="index.html"> <!-- vinculo insertado para enviar a otra direccion -->
+                        <img src="imagenes/escudo.png" alt="Escudo de Íquira"> <!-- imagen del escudo dentro del menu -->
+                        <span>Ciudad Luz</span>
+                    </a> <!-- / #logo-header -->       
+                </li>
+                <li><a href="pagina1.html">Espacio Físico y Ubicación</a></li> <!-- segundo elemento de la lista del menu con vinculo insertado -->
+                <li><a href="pagina2.html">Personajes Destacados</a></li> <!-- tercer elemento de la lista del menu con vinculo insertado -->
+                <li><a href="pagina3.html">Actividades y Lugares Turísticos</a></li> <!-- cuarto elemento de la lista del menu con vinculo insertado -->
+                <li class="active"><a href="pagina4.html">Breve Historia</a></li> <!-- quinto elemento de la lista del menu con vinculo insertado -->
+                <li><a href="pagina6.html">Diagrama</a></li> <!-- Diagrama de Phaser -->                
+                <li><a href="pagina5.html">Referencias y Créditos</a></li> <!-- sexto elemento de la lista del menu con vinculo insertado -->
+            </ul>
+        </nav><!-- / nav -->
+
+        </header><!-- / #main-header -->
+        
+        <section> <!-- crea una seccion de codigo -->
+            <h2>Breve Historia de Íquira<a href="http://www.iquira-huila.gov.co/municipio/historia" target="_blank"> (Ver)</a><!-- vinculo insertado dentro del titulo --></h2> 
+    
+            <p>La fundación de Íquira data de 1694 por orden de Francisco Martínez de Ospina quien le da el nombre de San Francisco de Íquira a una localidad levantada en lo que actualmente se conoce con el nombre de callejón, exactamente son los territorios de las fincas El Carmen, La Mestiza y San Mateo. Sus primeros moradores fueron los indios Paeces, que por sospecha de un posible ataque de los indios Pijaos decidieron trasladar la población al sitio que ocupa en la actualidad por ser un terreno alto, con posición estratégica para divisar al enemigo. Por eso se le da el nombre de “Montes Altos o Atalaya” como significado que las voces primitivas le daban a la palabra Íquira. Con el propósito de difundir la fé católica entre los aborígenes en 1656 los padres Franciscanos fundan un centro de doctrina y se le impone a San Francisco de Asís como su patrono. En 1672 los capitanes Francisco Perdomo de Betancourt, Francisco Trujillo y Castro, Alfonso de Montealegre y otros, trataron de elevar el caserío a la categoría de villa con el nombre de Callejón de Íquira. Este intento no prospera razón por la cual el pueblo es abandonado como hacían los Españoles en todos los pueblos que no aceptaban sus caprichos.</p>
+    
+            <img src="imagenes/parque.jpg" width="500px" alt="Fotografía del parque de Íquira años atrás"/> <!-- imagen que se introduce de la carpeta de imagenes, con ancho especifico, con el atributo alternativo -->
+    
+            <p>En 1887, Íquira es ascendido a la categoría de municipio y hacia 1907 se inicia la construcción del templo con la participación de todos los vecinos, quienes estaban liderados por el sacerdote Lucas Ortiza; iniciativa que se vio aplazada por la guerra de los 1.000 días. Como consecuencia de la mencionada guerra y ante los estragos dejados por esta se consideró la posibilidad de bajar a Íquira a la categoría de corregimiento, pasándola a pertenecer nuevamente a Yaguará, situación que nunca se consolidó. En 1915 mediante ordenanza número 034 la Honorable Asamblea Departamental definió los limites del municipio. En 1955 Centrales Eléctricas dio el servicio de la planta hidroeléctrica del río Íquira como primer sistema de generación instalado en el departamento con una capacidad de unos 4.500KW, razón por la cual al municipio también se le conoce como "Ciudad Luz del Huila". En 1969 se funda el Colegio María Auxiliadora y comienza a funcionar con 13 alumnos y en 1971 se pone al servicio de la comunidad una sucursal de la Caja Agraria encargada de los servicios financieros de los campesinos.</p>    
+        
+        </section>
+        <footer> <!-- crea pie de pagina -->
+            &copy; 2022 Laura Sofía Tamayo Zúñiga<br>Gráfica Interactiva<br>Universidad Nacional de Colombia
+        </footer>
+    </body>
+</html>

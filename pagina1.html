@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- codigo de la primera pagina que presenta informacion sobre el espacio fisico y la ubicacion-->
+<html>
+
+    <head>
+        <meta charset="UTF-8"/> <!-- permite escribir con caracteres del español -->
+        <meta lang="es"/> <!-- se especifica la lengua en la que estará escrita la información -->
+        <link rel="stylesheet" href="css/style.css"> <!-- incluir la hoja de estilos en la pagina -->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- el navegador se adapte al tamaño de la pantalla que consulta -->
+        <title>Espacio físico y ubicación-Íquira|Huila</title><!-- titulo de la barra -->
+        <link rel="icon" type="image/png" href="imagenes/favicon.png"/><!--icono en la pestaña del explorador-->
+    </head>
+    
+    <body>
+        <header id="main-header"><!--menu general-->
+    
+        <nav><!-- menu de navegacion con la direccion al que envia al seleccionarlo -->
+                <input type="checkbox" id="btn-menu" checked>
+                    <label for="btn-menu" id="btn-menu-icon"></label><!--<img src="imagenes/menu.png" width="30px"></label> <!-- definir una cajita que se va a modificar para, según su estado, desplegar el menu, ademas el atributo for del label permite relacionar el click del checkbox con el elemento label -->
+            <ul>
+                <li>
+                    <a id="logo-header" href="index.html"> <!-- vinculo insertado para enviar a otra direccion -->
+                        <img src="imagenes/escudo.png" alt="Escudo de Íquira"> <!-- imagen del escudo dentro del menu -->
+                        <span>Ciudad Luz</span>
+                    </a> <!-- / #logo-header -->       
+                </li>
+                <li class="active"><a href="pagina1.html">Espacio Físico y Ubicación</a></li> <!-- segundo elemento de la lista del menu con vinculo insertado -->
+                <li><a href="pagina2.html">Personajes Destacados</a></li> <!-- tercer elemento de la lista del menu con vinculo insertado -->
+                <li><a href="pagina3.html">Actividades y Lugares Turísticos</a></li> <!-- cuarto elemento de la lista del menu con vinculo insertado -->
+                <li><a href="pagina4.html">Breve Historia</a></li> <!-- quinto elemento de la lista del menu con vinculo insertado -->
+                <li><a href="pagina6.html">Diagrama</a></li> <!-- Diagrama de Phaser -->                
+                <li><a href="pagina5.html">Referencias y Créditos</a></li> <!-- sexto elemento de la lista del menu con vinculo insertado -->
+            </ul>
+        </nav><!-- / nav -->
+
+    </header><!-- / #main-header -->
+        
+    <section> <!-- crea una seccion de codigo -->    
+    <h2>Espacio Físico y Ubicación</h2> <!-- titulo de tamaño secundario -->
+    <h3>Ubicación</h3> <!-- titulo en tercer orden de tamaño -->
+        <p>El municipio de Íquira está localizado en la parte occidental del departamento del Huila sobre las estribaciones del volcán nevado del Huila. Limita al norte con el municipio de Teruel, al sur con el municipio de Tesalia, al oriente con los municipios de Teruel y Yaguará y al occidente con Nátaga y el departamento del Cauca. Adicionalmente, Íquira queda a a 64 Km de la ciudad de Neiva (Capital del Huila), lo que se traduce a más o menos 1 hora y 40 minutos, teniendo en cuenta el mal estado de las vías secundarias que llevan al municipio. <a href="imagenes/carretera.jpg" target="_blank">(Ver)</a><!-- vinculo insertado dentro del parrafo para mostrar una imagen --></p>
+    <img src="imagenes/ubicación.jpg" width="700px" alt="Ubicación del Municipio de Íquira"/> <!-- etiqueta para introducir una imagen -->
+    <br>
+        
+    <h3>Descripción Física</h3> <!-- titulo en tercer oden de tamaño -->
+        <p>En la topografía del municipio predomina la característica montañosa, la cual alterna con valles, mesetas, colinas y pequeños cañones. El clima constituye el conjunto de condiciones de la atmósfera que caracteriza el estado o situación del tiempo atmosférico y su evolución en un lugar dado. De acuerdo con esto, el Municipio cuenta con diversos pisos térmicos: Clima Cálido: comprende 55 Km2 y temperaturas entre 20 y 25°C. Clima Medio: Comprende 220 Km2  con temperaturas entre 18 y 20°C. Clima Frío: Comprende 254 Km2  con temperaturas entre 10 y 12°C. Clima de Páramo: Comprende 3 Km2  con temperaturas inferiores a 5°C. La precipitación anual promedia es de 1.600 mm.; además, en promedio el riesgo volcánico es bajo. Asimismo, se pueden exponer las siguientes características:</p>
+        <table border="1" align="center" > <!-- etiqueta para definir una tabla con filas y columnas-->
+        <tr> <!-- la tabla va fila por fila, esta etiqueta inicia la primera fila -->
+            <th>Extensión Total</th> <!-- define el encabezado de cada columna -->
+            <th>Altitud</th>
+            <th>Temperatura Media</th> 
+        </tr> <!--fin de la fila -->
+        <tr> <!-- inicia segunda fila -->
+            <td>532 Km2</td> <!-- debajo de extension total -->
+            <td>1400 msnm</td> <!-- debajo de altitud -->
+            <td>20-25 °C</td> <!-- debajo de temperatura media -->
+        </tr>
+        </table>
+        <br>
+    <img src="imagenes/relieve.jpg" width="720px"  alt="Vista del relieve desde Google Maps"/> <!-- imagen que se introduce de la carpeta de imagenes, con ancho especificos, con el atributo alternativo -->
+        
+    <p>Íquira cuenta con un parque principal el cual es cubierto por las ramas de un inmenso samán, este es una ceiba de muchos años; y al frente del parque, se encuentra la iglesia San Francisco de Asís, que se caracteriza por su cúpula de gran altura, la cual se visualiza desde algunas veredas. La mayoría de las calles del municipio son inclinadas, y algunas están sin pavimentar.</p>
+    <img src="imagenes/iglesia_saman.jpg" width="500px" alt="Vista del parque y la iglesia de Íquira"/> <!-- imagen que se introduce de la carpeta de imagenes, con ancho especificos, con el atributo alternativo -->
+    
+    <p>En Íquira se han declarado zonas de reserva para la conservación y protección de los recursos naturales, dos ecosistemas estratégicos de importancia regional por su alta producción hídrica y diversidad biológica de flora y fauna silvestre.</p>
+        <ul> <!-- inicio de una lista sin orden -->
+            <li> <!-- primer elemento de la lista -->Zona Amortiguadora Parque Nacional Natural Nevado del Huila, se localiza en la periferia del Parque Nacional Natural Nevado del Huila y su función especial dentro del Sistema Nacional de Parques es atenuar las perturbaciones que pueda causar la acción humana. Está ubicada al norte del territorio municipal en zona limítrofe con el municipio de Teruel y el departamento del Cauca, en jurisdicción de las veredas Narváez, Zaragoza, Nazareth, El Rosario y Lejanías, tiene un área aproximada de 11.478 Has.</li>
+            <br>
+            <li> <!-- segundo elemento de la lista -->Reserva Forestal Municipal Alto Banderas, ocupa la parte central del territorio tomando el filo de Banderas desde la Reserva Forestal de Tarpeya al Sur hasta la zona amortiguadora del Parque Nacional Natural Nevado del Huila al Norte; otra porción del territorio correspondiente a las zonas de recarga de las quebradas El Pato, La Perdiz y El Carmen. Es de gran valor estratégico por ser una estrella hidrográfica donde nacen fuentes tributarias de la cuenca del río Magdalena a través de los ríos Iquira, río Negro, Narváez y Callejón; su extensión es de 4.511 Has., que comprenden predios de las veredas Villa María, Ibirco, El Pato, El Carmen, Quebradón, Nazareth y Zaragoza.</li>
+        </ul> <!-- fin de la lista sin orden -->
+    
+    <h3>Distribución Política</h3> <!-- título en tercer oden de tamaño -->
+        <p>Este municipio cuenta con 41 veredas más el casco urbano (Ver la imagen).</p>
+    <img src="imagenes/veredas.jpg" width="400px" alt="Cabecera Municipal y Veredas de Íquira"/> <!-- imagen que se introduce de la carpeta de imagenes, con ancho especificos, con el atributo alternativo -->
+      </section>  
+        <footer> <!-- crea pie de pagina -->
+            &copy; 2022 Laura Sofía Tamayo Zúñiga<br>Gráfica Interactiva<br>Universidad Nacional de Colombia
+        </footer>
+    </body>
+</html>

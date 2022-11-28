@@ -1,0 +1,208 @@
+@charset "UTF-8"
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,300&display=swap'); /* fuente para el texto de la pagina */
+body { /* diseño del body de la pagina */
+    margin: 0; /* margen del body */
+    font-family: 'Josefin Sans', sans-serif; /* fuente para el texto */
+    /*background: #e4e4ef; /* color de fondo el body */
+    text-align: justify;  /* alineacion del texto dentro del body, que debe quedar justificado */
+}
+#main-header{ /* diseño de cabecera de la página que permanece fija aún al hacer scroll */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1; /* la cabecera esta por encima de la información */
+}
+header a#logo-header { /* diseño de la caja del logo*/
+    text-align: center; /* alineacion del texto */
+    display: flex; /* tipo de caja que permite alinear y justificar las cajas hijas */
+    flex-direction: column; /* distribuir en columna */
+    width: 70px;  /* ancho de la caja del logo */
+    align-items: center; /* alinear los elementos hijos */
+}
+header a#logo-header img { /* diseño de la imagen del logo */
+    width: 30px;  /* define ancho de la imagen del logo en pixeles*/
+}
+nav { /* diseño del nav */
+    display: flex; /* distribuir y alinear los elementos hijos */
+    background: #2f2f35; /* color del fondo */
+    padding: 0px;
+}
+nav ul { /* diseño del menu de navegacion de la lista sin orden */
+    list-style-type: none; /* eliminar las viñetas de la lista ul*/
+    margin: 0px;  /* margen del menu de navegacion de la lista sin orden */
+    padding: 0px; /* margen interno de ul */
+    display: flex; /* tipo de caja que permite alinear y justificar las cajas hijas */
+    justify-content: flex-start; /* alinea el contenido segun la dirección */
+    background: #2f2f35; /* color del fondo */
+    overflow: hidden;
+    transition: height 0.5s; /* animación de la salida del menu */
+}
+nav ul li { /* diseño de cada elemento de la lista sin orden del menu de navegacion */
+    padding: 5px 20px 5px 20px; /* margen interno de los cuatro lados de cada boton*/
+    display: flex; /* tipo de caja que permite alinear y justificar las cajas hijas */
+    flex-direction: column; /* distribuir en columna */
+    justify-content: center; /* alinea el contenido segun la dirección */
+    text-align: center;  /* alineacion del texto de cada elemento de la lista en el menu de navegacion */
+}
+nav ul li.active{ /* diseño del boton cuando se esta en esa pagina */
+    background: #417953; /* color de fondo del boton */
+}
+nav ul li:hover { /* estilo del boton cuando el cursor esta encima */
+    background: white; /* color de fondo del boton */
+}
+nav ul li:hover a{ /* color del texto cuando el cursor esta encima */
+    color: dimgray; /* color del texto */
+}
+nav a { /* diseño de las dentro de nav */
+    text-decoration: none; /* elimina las decoraciones del texto */
+    color: white; /* color del texto */
+}
+.contenedor { /* diseño de la clase contenedor para modificar que la cabecera o menu de navegación no tapara los titulos al navegar internamente */
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: scroll; /* mostrar solamente la barra de desplazamiento vertical*/
+}
+section { /* diseño de la seccion dentro del body */
+    max-width: 1000px; /* el ancho maximo */
+    margin: 0 auto 0 auto; /* margen de section */
+    padding: 60px 10px 10px 10px;  /* margen interno de section */
+}
+section img { /* diseño de las imagenes dentro de section */
+    display: block; /* convierte a la imagen en un bloque tipo div */
+    margin-left: auto; /* margen de la izquierda */ 
+    margin-right: auto; /* margen de la derecha */    
+    padding: 5px; /* margen interno de las imagenes dentro de section */ 
+    max-width: 90%; /* ancho maximo */
+}
+section a{ /* diseño de todas las a que estan dentro de section */
+    text-decoration: none; /* elimina las decoraciones del texto */
+    color: cadetblue; /* color del texto */
+    cursor: pointer; /* hace que el cursor tome forma de la manito cuando esta encima de un vinculo */
+}
+
+section ul li{
+    overflow-wrap: break-word;  /* partir las palabras si es más ancho que la pantalla de la información dentro de los li que están dentro de ul dentro de section */
+}
+
+.content { /* diseño del class content del div de los botones */
+    display: flex; /* tipo de caja que permite alinear y justificar las cajas hijas */
+    column-gap: 5px; /* espacio entre las columnas */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.content a { /* diseño del las a con clase content */
+    margin: 5px 0px;
+    padding: 5px 1em;
+    max-width: 200px;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+}
+.button{ /* diseño de los botones de navegacion interna */
+    background: #bcb7b7; /* color de fondo de los botones */
+    border: solid 0px; /* incluye caracteristicas para el borde de los botones de navegación interna */
+    border-radius: 5px; /* permite redondear las esquinas de los botones */
+    padding: 10px 4px; /* margen interna de los botones */
+    text-align: center; /* alineacion del texto dentro de los botones */
+    color: #566161; /* color del texto */
+}
+.button:hover{ /* estilo del boton de navegacion interna cuando el cursor esta encima */
+    background: #b5e0dc; /* color de fondo del boton */   
+}
+
+footer { /* diseño del pie de pagina */
+    background: #2f2f35; /* color del fondo */
+    color: white; /* color del texto */
+    font-size: 10px; /* tamaño del texto */
+    text-align: center; /* alineación del texto */
+    padding: 10px; /* margen interna del pie de pagina */
+/*    height: 100%;*/
+}
+input#btn-menu {
+    display: none; /* ocultar el boton del input*/
+}
+label#btn-menu-icon { /* diseño del boton del menu desplegable */
+    display: none;
+    width: 30px;
+    height: 30px;
+    background-image: url(../imagenes/menu_desplegado.png);
+    background-size: contain; /* que el fondo no se salga del contenedor manteniendo su proporcion */
+    background-repeat: no-repeat; /* hace que no se repita la imagen */
+    background-position: center; 
+}
+/* cuando la ventana mida menos de 1024px */
+@media only screen and (max-device-width: 1024px) and (min-device-width: 640px){
+    section { /* ancho maximo que puede ocupar el section en la pantalla */
+        max-width: 640px;
+        font-size: 15px;
+    }
+    .content a { /* diseño de los botones de navegacion interna */
+    max-width: 150px;  
+    font-size: 20px;
+    }
+    h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+    section img {
+        border: 4px solid #a0dabd;
+        min-width: calc(100%-8px);
+        margin: 5px auto;
+    }
+}
+
+/* cuando la ventana mida menos de 640px */
+@media only screen and (max-device-width: 640px) {
+    nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+    nav ul{
+        flex-direction: column; /*alinear los elementos en una columna*/
+        padding: 0;
+        height: 250px;
+    }
+    nav ul li {
+        padding: 10px 0px;
+        flex-direction: row; /* alinear los elementos como fila */
+        justify-content: flex-start; /* alinearlos al inicio */
+    }
+    header a#logo-header {
+        flex-direction: row; /* alinear los elementos como fila */
+        width: auto;
+        line-height: 30px; /* ancho del renglón */
+    }
+    header a#logo-header span { /* diseño del texto dentro del logo */
+        margin-top: 5px;
+    }
+
+    nav ul li:hover { /* color del fondo del nav cuando el cursor está por encima */
+        background: #417953;
+    }
+    nav ul li:hover a{ /* color del texto cuando el cursor esta encima */
+    color: white; /* color del texto */
+    }
+    label#btn-menu-icon { /* diseño del label */
+    display: inherit; /* hace que vuelva a aparecer el icono */
+    }
+    input#btn-menu:checked ~ label#btn-menu-icon{ /* diseño del label e input chequeado, utilizando un selector que selecciona los label que estén precedidos de un input chequeado */
+        background-image: url(../imagenes/menu.png); /* cambia la imagen de fondo cuando el input y label son chequeados */
+    }
+    input#btn-menu:checked ~ ul { /* selecciona las listas que esten precedidas por un input chequeado */
+        height: 0px;
+    }
+    .content {
+        font-size: 11px;
+    }
+    .content a {
+        font-size: 15px;
+        max-width: 150px;
+    }
+    h2 {
+        text-align: center;
+        padding-bottom: 5px;
+    }
+}
