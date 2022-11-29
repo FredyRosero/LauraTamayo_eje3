@@ -96,14 +96,10 @@ function crear_estado(titulo,contenido,imagen){
 				wordBreak: true, // Define si se rompe la palabra
 				wordWrapWidth: 500 // Define el ancho en que las palabras se cortan
 			};         
-
 			
 			var texto = diagrama.add.text(diagrama.world.centerX, imagen.position.y+imagen.height+20, contenido, estiloTexto);
 			texto.anchor.set.x=0.5;
-			texto.setTextBounds(0, 0, 0, 0); // Define la region rectangular del texto
-
-			console.log(texto);
-					  
+			texto.setTextBounds(0, 0, 0, 0); // Define la region rectangular del texto								  
 			
 			// texto regresar
 			var menu = diagrama.add.text(diagrama.world.centerX, texto.position.y+texto.height+30, "Volver", { font: "bold 30px Serif", fill: "#250", align: "center" });
