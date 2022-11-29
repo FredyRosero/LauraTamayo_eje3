@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- codigo de la cuarta pagina que presenta una breve historia de Iquira-->
+<html>
+
+    <head>
+        <meta charset="UTF-8"/> <!-- permite escribir con caracteres del español -->
+        <meta lang="es"/> <!-- se especifica la lengua en la que estará escrita la información -->
+        <link rel="stylesheet" href="css/style.css"> <!-- incluir la hoja de estilos en la pagina -->
+        <script src="javascript/phaser.js"></script>    
+        <script src="javascript/menu.js"></script>              
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- el navegador se adapte al tamaño de la pantalla que consulta -->
+        <title>Breve Historia-Íquira|Huila</title> <!-- titulo de la barra -->
+        <link rel="icon" type="image/png" href="imagenes/favicon.png"/><!--icono en la pestaña del explorador-->
+    </head>
+    
+    <body>
+        <header id="main-header"><!--menu general-->
+    
+         <nav><!-- menu de navegacion con la direccion al que envia al seleccionarlo -->
+                <input type="checkbox" id="btn-menu" checked>
+                    <label for="btn-menu" id="btn-menu-icon"></label><!--<img src="imagenes/menu.png" width="30px"></label> <!-- definir una cajita que se va a modificar para, según su estado, desplegar el menu, ademas el atributo for del label permite relacionar el click del checkbox con el elemento label -->
+            <ul>
+                <li>
+                    <a id="logo-header" href="index.html"> <!-- vinculo insertado para enviar a otra direccion -->
+                        <img src="imagenes/escudo.png" alt="Escudo de Íquira"> <!-- imagen del escudo dentro del menu -->
+                        <span>Ciudad Luz</span>
+                    </a> <!-- / #logo-header -->       
+                </li>
+                <li><a href="pagina1.html">Espacio Físico y Ubicación</a></li> <!-- segundo elemento de la lista del menu con vinculo insertado -->
+                <li><a href="pagina2.html">Personajes Destacados</a></li> <!-- tercer elemento de la lista del menu con vinculo insertado -->
+                <li><a href="pagina3.html">Actividades y Lugares Turísticos</a></li> <!-- cuarto elemento de la lista del menu con vinculo insertado -->
+                <li class="active"><a href="pagina4.html">Breve Historia</a></li> <!-- quinto elemento de la lista del menu con vinculo insertado -->
+                <li><a href="pagina6.html">Diagrama</a></li> <!-- Diagrama de Phaser -->                
+                <li><a href="pagina5.html">Referencias y Créditos</a></li> <!-- sexto elemento de la lista del menu con vinculo insertado -->
+            </ul>
+        </nav><!-- / nav -->
+
+        </header><!-- / #main-header -->
+        
+        <section> <!-- crea una seccion de codigo -->
+          <!-- Inicio Phaser -->
+          <div id="contenedor_phaser"></div>
+          <script src="javascript/script.js"></script><!-- Se pone acá para que el HTML se cargue antes que el Javascript -->
+          <!-- Fin Phaser -->      
+        </section>
+        <footer> <!-- crea pie de pagina -->
+            &copy; 2022 Laura Sofía Tamayo Zúñiga<br>Gráfica Interactiva<br>Universidad Nacional de Colombia
+        </footer>
+    </body>
+</html>
